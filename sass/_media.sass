@@ -1,40 +1,117 @@
-@media (max-width: 1600px)
+@media only screen and (max-width : 1600px)
 	.main
 		&-image
 			img
 				transform: scale(1.2)
 
-@media (max-width: 1450px)
+@media only screen and (max-width : 1450px)
 	.main
 		&-image
 			img
 				transform: none
 
-@media (max-width: 1200px)
+@media only screen and (max-width : 1200px)
 	.container
-		width: 960px
-	.feedback
-		&::before
-			width: 65%
-
-@media (max-width: 992px)
-	.container
-		width: 767px
+		width: 970px
 	.main
 		&-text
 			&__title
+				font-size: 35px
+				line-height: 45px
+			&__subtitle
+				padding-right: 30px
+				line-height: 30px
+	.feedback
+		&::before
+			width: 70%
+
+@media only screen and (max-width : 992px)
+	.container
+		width: 767px
+	.main
+		&-wrap
+			justify-content: space-between
+		&-text
+			flex-basis: 45%
+			&__title
 				margin-bottom: 40px
-				font-size: 30px
+				font-size: 28px
 				line-height: 36px
 			&__subtitle
+				font-size: 18px
 				line-height: 25px
 	.feedback
 		background: #fff
+		&::before
+			display: none
+
+@media only screen and (max-width : 768px)
+	.hidden-xs
+		display: none
+	.container
+		width: 100%
+	.main
+		&-wrap
+			flex-direction: column
+			align-items: center
+		&-text
+			max-width: 400px
+		&-image
+			max-width: 80%
+			margin-top: 40px
+
+@media only screen and (max-width : 560px)
+	.header
+		&-logo
+			flex-basis: 35%
+		&-text
+			&__contacts
+				margin-right: 15px
+			&__phone
+				font-size: 17px
+		&-button-xs
+			padding: 0
+			width: 40px
+			height: 40px
+			background: url(../img/header/header-mobile.png) no-repeat center
+			background-size: contain
+	.hidden
+		display: none
+	.main
+		padding: 60px 0
+		&-image
+			max-width: 90%
+	.feedback
+		padding: 60px 0
+	.form
+		&__subtitle
+			line-height: 25px
+		&-info
+			text-align: center
+			flex-direction: column
+			justify-content: center
+			&__manager
+				margin-bottom: 10px
+			&__callback
+				&::before
+		&__input
+			width: 100%
+			&:nth-child(1)
+				margin-right: 0
+			&-wrap
+				flex-direction: column
+				align-items: flex-start
+		&__button
+			padding: 20px
 
 
+@media only screen and (max-width : 380px)
+	.header
+		&-logo
+			flex-basis: 32%
+		&-text
+			&__contacts
+				margin-right: 15px
+			&__phone
+				font-size: 14px
 
-//* @media (max-width: 768px)
-
-
-
- //* @media (max-width: 576px)
