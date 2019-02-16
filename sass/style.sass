@@ -11,7 +11,8 @@
 *, *::after, *::before
 	box-sizing: border-box
 
-body 
+body
+	overflow-x: hidden
 	font-family: 'Museo Sans Light', sans-serif
 	color: $text-color
 
@@ -24,4 +25,6 @@ button, input
 		outline: none
 
 img 
-	width: 100%
+	max-width: 100%
+
+@import 'media'
