@@ -24,6 +24,13 @@
 	.feedback
 		&::before
 			width: 70%
+	.modal
+		&__dialog
+			width: 970px
+		&-info
+			padding: 60px 20px 60px 40px
+		&-form
+			padding: 60px 60px
 
 @media only screen and (max-width : 992px)
 	.container
@@ -44,6 +51,15 @@
 		background: #fff
 		&::before
 			display: none
+	.modal
+		&__dialog
+			width: 767px
+		&-info
+			padding: 30px
+		&-form
+			padding: 30px
+		&__close
+			font-size: 20px
 
 @media only screen and (max-width : 768px)
 	.hidden-xs
@@ -59,6 +75,23 @@
 		&-image
 			max-width: 80%
 			margin-top: 40px
+	.form
+		margin: 0 auto
+	.modal
+		padding: 40px
+		overflow-y: scroll
+		&__dialog
+			flex-direction: column
+			width: 90%
+		&-info
+			order: 1
+			padding: 50px 30px 30px 30px
+		&-form
+			padding: 50px 30px 50px 30px
+			&__title
+				margin-bottom: 30px
+			&__subtitle
+				margin-bottom: 30px
 
 @media only screen and (max-width : 560px)
 	.header
@@ -103,7 +136,31 @@
 				align-items: flex-start
 		&__button
 			padding: 20px
-
+	.modal
+		padding: 40px 20px
+		&__dialog
+			width: 100%
+		&-info
+			padding: 50px 20px 30px 20px
+		&-block
+			flex-direction: column
+			justify-content: center
+			margin-bottom: 30px
+			text-align: center
+			&:nth-child(3)
+				margin-bottom: 30px
+			&__img
+				margin: 0 auto
+				margin-bottom: 10px
+			&__title
+				&::after
+					width: 100%
+		&-form
+			padding: 50px 20px 50px 20px
+		&-workin
+			&__elem
+				margin-bottom: 10px
+				line-height: 25px
 
 @media only screen and (max-width : 380px)
 	.header
@@ -114,4 +171,13 @@
 				margin-right: 15px
 			&__phone
 				font-size: 14px
-
+	.modal
+		&-info
+			padding: 50px 20px 20px 20px
+		&-form
+			&__title
+				font-size: 18px
+				line-height: 25px
+		&-workin
+			&__title
+				text-align: center
