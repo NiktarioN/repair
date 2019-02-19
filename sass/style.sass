@@ -7,6 +7,7 @@
 @import 'header'
 @import 'main'
 @import 'feedback'
+@import 'portfolio'
 
 @import 'modal'
 
@@ -23,7 +24,7 @@ body
 	padding: 0 $padding-pr
 	margin: 0 auto
 
-button, input
+button, input, .slick-active
 	&:active,&:focus
 		outline: none
 
@@ -36,5 +37,13 @@ img
 
 ul 
 	padding: 0
+
+.section
+	&-title
+		+bold
+		font-size: 30px
+		line-height: 45px
+		&_center
+			text-align: center
 
 @import 'media'
