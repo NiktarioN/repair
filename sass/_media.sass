@@ -57,15 +57,6 @@
 			margin-bottom: 60px
 			font-size: 25px
 			line-height: 38px
-	.modal
-		&__dialog
-			width: 767px
-		&-info
-			padding: 30px
-		&-form
-			padding: 30px
-		&__close
-			font-size: 20px
 	.price
 		&-card
 			min-height: auto
@@ -78,6 +69,29 @@
 		&__title
 			font-size: 25px
 			line-height: 38px
+		&-card
+			&__link
+				&:hover
+					&::after
+						z-index: 0
+						height: 3px
+	.information
+		background-size: cover
+		&::before
+			width: 50%
+		&-faq
+			flex-basis: 46%
+		&-form
+			flex-basis: 45%
+	.modal
+		&__dialog
+			width: 767px
+		&-info
+			padding: 30px
+		&-form
+			padding: 30px
+		&__close
+			font-size: 20px
 
 @media only screen and (max-width : 768px)
 	.hidden-xs
@@ -103,6 +117,15 @@
 		padding: 60px 0 130px 0
 		&__title
 			margin-bottom: 40px
+	.price
+		padding: 60px 0
+		&__title
+			margin-bottom: 40px
+		&__subtitle
+			margin-bottom: 40px
+	.information
+		&-wrap
+			flex-direction: column
 	.modal
 		padding: 40px
 		overflow-y: scroll
@@ -118,18 +141,6 @@
 				margin-bottom: 30px
 			&__subtitle
 				margin-bottom: 30px
-	.price
-		padding: 60px 0
-		&__title
-			margin-bottom: 40px
-		&__subtitle
-			margin-bottom: 40px
-		&-card
-			&__link
-				&:hover
-					&::after
-						z-index: 0
-						height: 3px
 @media only screen and (max-width : 560px)
 	.header
 		&-logo

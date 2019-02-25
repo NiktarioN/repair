@@ -812,12 +812,12 @@ template {
 
 .information {
   position: relative;
+  z-index: 1;
   padding: 100px 0;
   background-image: url("../img/information/information-bg.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center right;
-  z-index: 1;
 }
 
 .information::before {
@@ -825,16 +825,131 @@ template {
   position: absolute;
   top: 0;
   left: 0;
-  width: 60%;
+  z-index: -1;
+  width: 55%;
   height: 100%;
   background-color: #ffc000;
-  z-index: -1;
 }
 
 .information-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.information-faq {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.information-faq__title {
+  margin-bottom: 45px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.information-faq__subtitle {
+  font-size: 16px;
+  color: #000000;
+}
+
+.information-faq__questions {
+  padding-left: 70px;
+  margin-top: 90px;
+  list-style: none;
+  color: #000000;
+}
+
+.information-faq__questions-item {
+  position: relative;
+  margin-bottom: 40px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 18px;
+}
+
+.information-faq__questions-item:last-child {
+  margin-bottom: 0;
+}
+
+.information-faq__questions-item::before {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: -70px;
+  width: 35px;
+  height: 35px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.information-faq__questions-item-1::before {
+  content: '1.';
+}
+
+.information-faq__questions-item-2::before {
+  content: '2.';
+}
+
+.information-faq__questions-item-3::before {
+  content: '3.';
+}
+
+.information-faq__questions-item-4::before {
+  content: '4.';
+}
+
+.information-form {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  text-align: center;
+}
+
+.information-form__title {
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.information-form__subtitle {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.information-form__input {
+  display: block;
+  width: 100%;
+}
+
+.information-form__input:first-child {
+  margin-bottom: 15px;
+}
+
+.information-form__button {
+  width: 100%;
+  padding: 28px;
+  margin-top: 30px;
+  margin-bottom: 33px;
+  font-size: 16px;
+}
+
+.information-form__callback {
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .modal {
@@ -931,7 +1046,12 @@ template {
   color: #000000;
 }
 
+.modal-workin {
+  padding-bottom: 15px;
+}
+
 .modal-workin__title {
+  margin-bottom: 10px;
   font-size: 16px;
   font-family: 'Museo Sans Bold', sans-serif;
   color: #000000;
@@ -1042,17 +1162,13 @@ button:active, button:focus, input:active, input:focus, .slick-active:active, .s
   outline: none;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ul {
   padding: 0;
   margin: 0;
 }
 
 img {
   max-width: 100%;
-}
-
-ul {
-  padding: 0;
 }
 
 .section-title {
@@ -1146,18 +1262,6 @@ ul {
     font-size: 25px;
     line-height: 38px;
   }
-  .modal__dialog {
-    width: 767px;
-  }
-  .modal-info {
-    padding: 30px;
-  }
-  .modal-form {
-    padding: 30px;
-  }
-  .modal__close {
-    font-size: 20px;
-  }
   .price-card {
     min-height: auto;
   }
@@ -1172,6 +1276,36 @@ ul {
   .price__title {
     font-size: 25px;
     line-height: 38px;
+  }
+  .price-card__link:hover::after {
+    z-index: 0;
+    height: 3px;
+  }
+  .information {
+    background-size: cover;
+  }
+  .information::before {
+    width: 50%;
+  }
+  .information-faq {
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%;
+  }
+  .information-form {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .modal__dialog {
+    width: 767px;
+  }
+  .modal-info {
+    padding: 30px;
+  }
+  .modal-form {
+    padding: 30px;
+  }
+  .modal__close {
+    font-size: 20px;
   }
 }
 
@@ -1213,6 +1347,21 @@ ul {
   .portfolio__title {
     margin-bottom: 40px;
   }
+  .price {
+    padding: 60px 0;
+  }
+  .price__title {
+    margin-bottom: 40px;
+  }
+  .price__subtitle {
+    margin-bottom: 40px;
+  }
+  .information-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .modal {
     padding: 40px;
     overflow-y: scroll;
@@ -1238,19 +1387,6 @@ ul {
   }
   .modal-form__subtitle {
     margin-bottom: 30px;
-  }
-  .price {
-    padding: 60px 0;
-  }
-  .price__title {
-    margin-bottom: 40px;
-  }
-  .price__subtitle {
-    margin-bottom: 40px;
-  }
-  .price-card__link:hover::after {
-    z-index: 0;
-    height: 3px;
   }
 }
 

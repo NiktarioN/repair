@@ -1,20 +1,97 @@
 .information
 	position: relative
+	z-index: 1
 	padding: 100px 0
 	background: 
 		image: url('../img/information/information-bg.jpg')
 		size: contain
 		repeat: no-repeat
 		position: center right
-	z-index: 1
 	&::before
 		content: ' '
 		position: absolute
 		top: 0
 		left: 0
-		width: 60%
+		z-index: -1
+		width: 55%
 		height: 100%
 		background-color: $bg-color-yellow
-		z-index: -1
+
 	&-wrap
 		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&-faq
+		flex-basis: 50%
+		&__title
+			margin-bottom: 45px
+			+bold
+			font-size: 22px
+			line-height: 33px
+			color: $text-color-black
+		&__subtitle
+			font-size: 16px
+			color: $text-color-black
+		&__questions
+			padding-left: 70px
+			margin-top: 90px
+			list-style: none
+			color: $text-color-black
+			&-item
+				position: relative
+				margin-bottom: 40px
+				+bold
+				font-size: 18px
+				&:last-child
+					margin-bottom: 0
+				&::before
+					content: ' '
+					position: absolute
+					top: 50%
+					left: -70px
+					width: 35px
+					height: 35px
+					transform: translateY(-50%)
+					text-align: center
+					border: 2px solid #000000
+					border-radius: 50%
+					font-size: 16px
+					line-height: 32px
+				&-1
+					&::before
+						content: '1.'
+				&-2
+					&::before
+						content: '2.'
+				&-3
+					&::before
+						content: '3.'
+				&-4
+					&::before
+						content: '4.'
+	&-form
+		flex-basis: 35%
+		text-align: center
+		&__title
+			margin-bottom: 40px
+			font-size: 22px
+			line-height: 33px
+		&__subtitle
+			display: block
+			margin-bottom: 40px
+			font-size: 16px
+			line-height: 35px
+		&__input
+			display: block
+			width: 100%
+			&:first-child
+				margin-bottom: 15px
+		&__button
+			width: 100%
+			padding: 28px
+			margin-top: 30px
+			margin-bottom: 33px
+			font-size: 16px
+		&__callback
+			font-size: 15px
+			line-height: 24px
