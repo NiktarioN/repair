@@ -66,6 +66,18 @@
 			padding: 30px
 		&__close
 			font-size: 20px
+	.price
+		&-card
+			min-height: auto
+			&__img
+				height: auto
+				object-fit: contain
+				&-wrap
+					&::after
+						display: none
+		&__title
+			font-size: 25px
+			line-height: 38px
 
 @media only screen and (max-width : 768px)
 	.hidden-xs
@@ -106,7 +118,18 @@
 				margin-bottom: 30px
 			&__subtitle
 				margin-bottom: 30px
-
+	.price
+		padding: 60px 0
+		&__title
+			margin-bottom: 40px
+		&__subtitle
+			margin-bottom: 40px
+		&-card
+			&__link
+				&:hover
+					&::after
+						z-index: 0
+						height: 3px
 @media only screen and (max-width : 560px)
 	.header
 		&-logo
@@ -175,6 +198,10 @@
 			&__elem
 				margin-bottom: 10px
 				line-height: 25px
+	.price
+		&__title
+			span
+				display: inline
 
 @media only screen and (max-width : 380px)
 	.header

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ремонт квартир</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slick.css">
 </head>
@@ -79,14 +80,14 @@
 					Оставьте заявку на разработку бесплатного дизайн-проекта!
 				</span>
 			</h2>
-			<form action="#">
+			<form action="#" class="js-ajax">
 				<div class="form__input-wrap">
-					<input type="text" class="input form__input input__name" placeholder="Ваше имя" required>
-					<input type="tel" maxlength="11" autocomplete="" class="input form__input input__tel" placeholder="Ваш телефон"
+					<input type="text" name="fio" class="input form__input input__name" placeholder="Ваше имя" required>
+					<input type="tel" name="phone" maxlength="11" autocomplete="" class="input form__input input__tel" placeholder="Ваш телефон"
 					 required>
 				</div>
 				<button type="submit" class="button form__button">
-					Получить бесплатный дизайн-проект
+					Получить бесплатный дизайн&nbsp;-&nbsp;проект
 				</button>
 			</form>
 			<div class="form-info">
@@ -134,6 +135,117 @@
 		</div>
 	</div>
 </section>
+
+<section class="price">
+	<div class="container">
+		<h2 class="section-title section-title_center price__title">
+			У нас очень гибкая система скидок <span>на комплексные работы!</span>
+		</h2>
+		<div class="section-subtitle price__subtitle">
+			Прайс на наши услуги
+		</div>
+		<div class="price-wrap">
+			<div class="price-card">
+				<div class="price-card__img-wrap">
+					<img src="img/price/price-img_1.jpg" alt="Фотография услуги" class="price-card__img">
+				</div>
+				<div class="price-card__title">Ремонт ванных комнат и с/у
+				</div>
+				<a href="#" class="price-card__link">Узнать цены</a>
+			</div>
+			<div class="price-card">
+				<div class="price-card__img-wrap">
+					<img src="img/price/price-img_2.jpg" alt="Фотография услуги" class="price-card__img">
+				</div>
+				<div class="price-card__title">Ремонт комнат и квартир
+				</div>
+				<a href="#" class="price-card__link">Узнать цены</a>
+			</div>
+			<div class="price-card">
+				<div class="price-card__img-wrap">
+					<img src="img/price/price-img_3.jpg" alt="Фотография услуги" class="price-card__img">
+				</div>
+				<div class="price-card__title">Отделка офисных помещений
+				</div>
+				<a href="#" class="price-card__link">Узнать цены</a>
+			</div>
+			<div class="price-card">
+				<div class="price-card__img-wrap">
+					<img src="img/price/price-img_4.jpg" alt="Фотография услуги" class="price-card__img">
+				</div>
+				<div class="price-card__title">Ремонт в новостройках
+				</div>
+				<a href="#" class="price-card__link">Узнать цены</a>
+			</div>
+			<div class="price-card">
+				<div class="price-card__img-wrap">
+					<img src="img/price/price-img_5.jpg" alt="Фотография услуги" class="price-card__img">
+				</div>
+				<div class="price-card__title">Ремонт кухонь
+				</div>
+				<a href="#" class="price-card__link">Узнать цены</a>
+			</div>
+			<div class="price-card">
+				<div class="price-card__img-wrap">
+					<img src="img/price/price-img_6.jpg" alt="Фотография услуги" class="price-card__img">
+				</div>
+				<div class="price-card__title">Ремонт дач и коттеджей
+				</div>
+				<a href="#" class="price-card__link">Узнать цены</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- <section class="information">
+	<div class="container">
+		<div class="information-wrap">
+			<div class="information-faq">
+				<h2 class="information-faq__title">Мы можем озвучить Вам примерную стоимость
+					<span>работы и материалов по телефону</span>
+				</h2>
+				<span class="information-faq__subtitle">Для этого нужно ответить на 4 вопроса:</span>
+				<ul class="information-faq__questions">
+					<li class="information-faq__questions-item">Какова площадь помещения?
+					</li>
+					<li class="information-faq__questions-item">
+						У Вас новостройка или вторичное жилье?
+					</li>
+					<li class="information-faq__questions-item">
+						Где находится помещение, в котором будет
+						производиться ремонт?
+					</li>
+					<li class="information-faq__questions-item">
+						Назначение помещения?
+					</li>
+				</ul>
+			</div>
+			<div class="information-form">
+				<h2 class="information-form__title">
+					Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
+					<span class="information-form__subtitle">
+						Оставьте заявку на разработку бесплатного дизайн-проекта!
+					</span>
+				</h2>
+				<form action="#" class="js-ajax">
+					<input type="text" name="fio" class="input form__input input__name" placeholder="Ваше имя" required>
+					<input type="tel" name="phone" maxlength="11" autocomplete="" class="input form__input input__tel"
+						placeholder="Ваш телефон" required>
+					<button type="submit" class="button form__button">
+						Получить бесплатный дизайн-проект
+					</button>
+				</form>
+				<div class="information-form-info">
+					<div class="information-form__callback">
+						Наш менеджер перезвонит Вам в течение 60 секунд
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
 
 <!-- Модальные окна -->
 <div class="modal" id="modal-callback">
@@ -235,6 +347,7 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/form-ajax.js"></script>
 
 <script src="js/modal.js"></script>
 
