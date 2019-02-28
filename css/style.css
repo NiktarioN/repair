@@ -1035,6 +1035,74 @@ template {
   color: #000000;
 }
 
+.banner {
+  padding: 100px 0;
+  background-color: #ffc000;
+}
+
+.banner-text {
+  text-align: center;
+  font-size: 32px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.banner-text span {
+  display: block;
+}
+
+.offer {
+  padding: 100px 0;
+}
+
+.offer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.offer-block {
+  position: relative;
+  -ms-flex-preferred-size: 31.5%;
+      flex-basis: 31.5%;
+  min-height: 410px;
+  background-color: #f7f7f7;
+}
+
+.offer-block:last-child {
+  margin-bottom: 0;
+}
+
+.offer-block__text {
+  padding: 25px 25px 0 25px;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.offer-block__text span {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.offer-block__img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.offer-block__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -1394,6 +1462,21 @@ img {
   .steps-item::after {
     display: none;
   }
+  .banner-text {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .offer-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .offer-block {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    margin-bottom: 35px;
+  }
   .modal__dialog {
     width: 767px;
   }
@@ -1494,6 +1577,21 @@ img {
   }
   .steps-item__text {
     width: 60%;
+  }
+  .banner {
+    padding: 60px 0;
+  }
+  .banner-text span {
+    display: inline;
+  }
+  .offer {
+    padding: 60px 0;
+  }
+  .offer-block {
+    min-height: 360px;
+  }
+  .offer-block__text {
+    padding: 20px 20px 0px 20px;
   }
   .modal {
     padding: 40px;
@@ -1614,6 +1712,16 @@ img {
   .steps-item__text {
     width: 85%;
   }
+  .price__title span {
+    display: inline;
+  }
+  .price-card {
+    margin: 0 0 30px 0;
+  }
+  .offer-block {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
   .modal {
     padding: 40px 20px;
   }
@@ -1651,9 +1759,6 @@ img {
     margin-bottom: 10px;
     line-height: 25px;
   }
-  .price__title span {
-    display: inline;
-  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -1688,6 +1793,14 @@ img {
   }
   .steps-item__text {
     width: 60%;
+  }
+  .banner-text {
+    font-size: 21px;
+    line-height: 35px;
+  }
+  .offer-block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .modal-info {
     padding: 50px 20px 20px 20px;

@@ -94,6 +94,17 @@
 			flex-basis: 30%
 			&::after
 				display: none
+	.banner
+		&-text
+			font-size: 25px
+			line-height: 40px
+	.offer
+		&-wrap
+			flex-wrap: wrap
+			justify-content: space-around
+		&-block
+			flex-basis: 45%
+			margin-bottom: 35px
 	.modal
 		&__dialog
 			width: 767px
@@ -160,6 +171,17 @@
 			flex-basis: 50%
 			&__text
 				width: 60%
+	.banner
+		padding: 60px 0
+		&-text
+			span
+				display: inline
+	.offer
+		padding: 60px 0
+		&-block
+			min-height: 360px
+			&__text
+				padding: 20px 20px 0px 20px
 	.modal
 		padding: 40px
 		overflow-y: scroll
@@ -243,6 +265,15 @@
 			margin-bottom: 30px
 			&__text
 				width: 85%
+	.price
+		&__title
+			span
+				display: inline
+		&-card
+			margin: 0 0 30px 0
+	.offer
+		&-block
+			flex-basis: 70%
 	.modal
 		padding: 40px 20px
 		&__dialog
@@ -268,10 +299,6 @@
 			&__elem
 				margin-bottom: 10px
 				line-height: 25px
-	.price
-		&__title
-			span
-				display: inline
 
 @media only screen and (max-width : 380px)
 	.section
@@ -301,6 +328,13 @@
 			margin-bottom: 50px
 			&__text
 				width: 60%
+	.banner
+		&-text
+			font-size: 21px
+			line-height: 35px
+	.offer
+		&-block
+			flex-basis: 100%
 	.modal
 		&-info
 			padding: 50px 20px 20px 20px

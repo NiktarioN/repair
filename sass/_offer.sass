@@ -1,0 +1,28 @@
+.offer
+	padding: 100px 0
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&-block
+		position: relative
+		flex-basis: 31.5%
+		min-height: 410px
+		background-color: $modal-bg-gray
+		&:last-child
+			margin-bottom: 0
+		&__text
+			padding: 25px 25px 0 25px
+			font-size: 16px
+			line-height: 23px
+			color: $text-color-black
+			span
+				+bold
+		&__img
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			img
+				object-fit: cover
+				vertical-align: bottom
