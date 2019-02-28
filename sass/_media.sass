@@ -35,6 +35,12 @@
 @media only screen and (max-width : 992px)
 	.container
 		width: 767px
+	.section
+		&-title
+			font-size: 25px
+			line-height: 38px
+		&-subtitle
+			font-size: 18px
 	.main
 		&-wrap
 			justify-content: space-between
@@ -55,8 +61,6 @@
 		padding: 70px 0 150px 0
 		&__title
 			margin-bottom: 60px
-			font-size: 25px
-			line-height: 38px
 	.price
 		&-card
 			min-height: auto
@@ -66,9 +70,6 @@
 				&-wrap
 					&::after
 						display: none
-		&__title
-			font-size: 25px
-			line-height: 38px
 		&-card
 			&__link
 				&:hover
@@ -83,6 +84,16 @@
 			flex-basis: 46%
 		&-form
 			flex-basis: 45%
+	.steps
+		&-wrap
+			justify-content: space-around
+			flex-wrap: wrap
+		&-item
+			min-height: 200px
+			margin-bottom: 50px
+			flex-basis: 30%
+			&::after
+				display: none
 	.modal
 		&__dialog
 			width: 767px
@@ -124,8 +135,31 @@
 		&__subtitle
 			margin-bottom: 40px
 	.information
+		padding: 60px 0
+		&::before
+			width: 100%
+			height: 49%
 		&-wrap
 			flex-direction: column
+			align-items: center
+		&-faq
+			margin-bottom: 100px
+		&-form
+			&__input
+				width: 70%
+				margin: 0 auto
+			&__button 
+				width: 70%
+				margin: 30px auto 33px auto
+	.steps
+		&__title
+			span
+				display: inline
+		padding: 15px 0
+		&-item
+			flex-basis: 50%
+			&__text
+				width: 60%
 	.modal
 		padding: 40px
 		overflow-y: scroll
@@ -141,7 +175,12 @@
 				margin-bottom: 30px
 			&__subtitle
 				margin-bottom: 30px
+
+
 @media only screen and (max-width : 560px)
+	.button
+			padding: 20px
+
 	.header
 		&-logo
 			flex-basis: 35%
@@ -184,6 +223,26 @@
 				align-items: flex-start
 		&__button
 			padding: 20px
+	.information
+		&-form
+			&__input
+				width: 85%
+			&__button 
+				width: 85%
+		&-faq
+			&__questions
+				margin-top: 60px
+				&-item
+					margin-bottom: 30px
+	.steps
+		&__title
+			margin-bottom: 40px
+		&__subtitle
+			margin-bottom: 45px
+		&-item
+			margin-bottom: 30px
+			&__text
+				width: 85%
 	.modal
 		padding: 40px 20px
 		&__dialog
@@ -215,6 +274,12 @@
 				display: inline
 
 @media only screen and (max-width : 380px)
+	.section
+		&-title
+			font-size: 21px
+			line-height: 30px
+		&-subtitle
+			font-size: 16px
 	.header
 		&-logo
 			flex-basis: 32%
@@ -223,6 +288,19 @@
 				margin-right: 15px
 			&__phone
 				font-size: 14px
+	.information
+		&-form
+			&__input
+				width: 100%
+			&__button 
+				width: 100%
+	.steps
+		&-item
+			flex-basis: 100%
+			min-height: auto
+			margin-bottom: 50px
+			&__text
+				width: 60%
 	.modal
 		&-info
 			padding: 50px 20px 20px 20px
