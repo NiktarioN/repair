@@ -1,3 +1,39 @@
+*, *::after, *::before
+	box-sizing: border-box
+
+body
+	overflow-x: hidden
+	font-family: 'Museo Sans Light', sans-serif
+	color: $text-color
+
+.container
+	width: 1170px
+	padding: 0 $padding-pr
+	margin: 0 auto
+
+button, input, .slick-active
+	&:active,&:focus
+		outline: none
+
+h1, h2, h3, p, ul
+	padding: 0
+	margin: 0
+
+img 
+	max-width: 100%
+
+.section
+	padding: 100px 0
+	&-title
+		+bold
+		font-size: 30px
+		line-height: 45px
+		&_center
+			text-align: center
+	&-subtitle
+		font-size: 20px
+		text-align: center
+
 .button
 	padding: 17px 30px
 	transition: 0.3s
@@ -15,4 +51,42 @@
 	padding: 23px
 	border-radius: 10px
 	border: 1px solid $input-border
-	font-size: 15px 
+	font-size: 15px
+
+@media only screen and (max-width : 1200px)
+	.container
+		width: 970px
+
+@media only screen and (max-width : 992px)
+	.container
+		width: 767px
+	.section
+		&-title
+			font-size: 25px
+			line-height: 38px
+		&-subtitle
+			font-size: 18px
+
+@media only screen and (max-width : 768px)
+	.container
+		width: 100%
+	.hidden-xs
+		display: none
+	.section
+		padding: 70px 0
+		&-title
+			margin-bottom: 40px
+
+@media only screen and (max-width : 560px)
+	.hidden
+		display: none
+	.button
+			padding: 20px
+
+@media only screen and (max-width : 380px)
+	.section
+		&-title
+			font-size: 21px
+			line-height: 30px
+		&-subtitle
+			font-size: 16px

@@ -1,5 +1,4 @@
 .price
-	padding: 100px 0
 	&-wrap
 		display: flex
 		flex-wrap: wrap
@@ -64,3 +63,33 @@
 				&::after
 					z-index: -1
 					height: 14px
+
+@media only screen and (max-width : 992px)
+	.price
+		&-card
+			min-height: auto
+			&__img
+				height: auto
+				object-fit: contain
+				&-wrap
+					&::after
+						display: none
+		&-card
+			&__link
+				&:hover
+					&::after
+						z-index: 0
+						height: 3px
+
+@media only screen and (max-width : 768px)
+	.price
+		&__subtitle
+			margin-bottom: 40px
+
+@media only screen and (max-width : 560px)
+	.price
+		&__title
+			span
+				display: inline
+		&-card
+			margin: 0 0 30px 0

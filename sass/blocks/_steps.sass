@@ -20,7 +20,7 @@
 		&::after
 			content: ' '
 			position: absolute
-			top: 0
+			top: -10px
 			right: -38px
 			width: 72px
 			height: 25px
@@ -42,3 +42,44 @@
 			font-size: 14px
 			line-height: 20px
 			color: $text-color-black
+
+@media only screen and (max-width : 992px)
+	.steps
+		&-wrap
+			justify-content: center
+			flex-wrap: wrap
+		&-item
+			min-height: 200px
+			margin-bottom: 50px
+			flex-basis: 30%
+			&::after
+				display: none
+
+@media only screen and (max-width : 768px)
+	.steps
+		&__title
+			span
+				display: inline
+		padding: 15px 0
+		&-item
+			flex-basis: 50%
+			&__text
+				width: 60%
+
+@media only screen and (max-width : 560px)
+	.steps
+		&__subtitle
+			margin-bottom: 45px
+		&-item
+			margin-bottom: 30px
+			&__text
+				width: 85%
+
+@media only screen and (max-width : 380px)
+	.steps
+		&-item
+			flex-basis: 100%
+			min-height: auto
+			margin-bottom: 50px
+			&__text
+				width: 60%

@@ -1,54 +1,28 @@
+@import 'normalize'
 @import 'vars'
 @import 'mixins'
-@import 'normalize'
 @import 'fonts'
 @import 'interface'
 
-@import 'header'
-@import 'main'
-@import 'feedback'
-@import 'portfolio'
-@import 'price'
-@import 'information'
-@import 'steps'
-@import 'banner'
-@import 'offer'
-
-@import 'modal'
-
-*, *::after, *::before
-	box-sizing: border-box
-
-body
-	overflow-x: hidden
-	font-family: 'Museo Sans Light', sans-serif
-	color: $text-color
-
-.container
-	width: 1170px
-	padding: 0 $padding-pr
-	margin: 0 auto
-
-button, input, .slick-active
-	&:active,&:focus
-		outline: none
-
-h1, h2, h3, p, ul
-	padding: 0
-	margin: 0
-
-img 
-	max-width: 100%
-
-.section
-	&-title
-		+bold
-		font-size: 30px
-		line-height: 45px
-		&_center
-			text-align: center
-	&-subtitle
-		font-size: 20px
-		text-align: center
-
-@import 'media'
+/* Импорт стилей шапки */
+@import 'blocks/header'
+/* Импорт стилей для главного экрана */
+@import 'blocks/main'
+/* Импорт стилей для блока feedback */
+@import 'blocks/feedback'
+/* Импорт стилей для блока portfolio */
+@import 'blocks/portfolio'
+/* Импорт стилей для блока price */
+@import 'blocks/price'
+/* Импорт стилей для блока steps */
+@import 'blocks/steps'
+/* Импорт стилей для блока banner */
+@import 'blocks/banner'
+/* Импорт стилей для блока offer */
+@import 'blocks/offer'
+/* Импорт стилей для блока guarantee */
+@import 'blocks/guarantee'
+/* Импорт стилей для блока information */
+@import 'blocks/information'
+/* Импорт стилей для модальных окон*/
+@import 'blocks/modal'

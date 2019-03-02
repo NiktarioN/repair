@@ -25,7 +25,10 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					swipe: true
+					autoplay: true,
+					autoplaySpeed: 2000,
+					swipe: true,
+					arrows: false
 				}
 			}
 		]

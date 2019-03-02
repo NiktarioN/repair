@@ -1,0 +1,71 @@
+.guarantee
+	padding: 60px 0 200px 0
+	&__title
+		width: 85%
+		margin: 0 auto
+		margin-bottom: 90px
+		span
+			display: block
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		text-align: center
+	&-block
+		flex-basis: 30%
+		&__img
+			width: 270px
+			height: 360px
+			margin: 0 auto
+			padding: 6px
+			border: 20px solid $bg-color-gray
+		&__text
+			width: 90%
+			margin: 0 auto
+			margin-top: 40px
+			font-size: 18px
+			line-height: 24px
+			color: $text-color-black
+			&_xl
+				display: block
+
+@media only screen and (max-width : 1200px)
+	.guarantee
+		&-block
+			&__text
+				&_lg
+					display: block
+
+@media only screen and (max-width : 992px)
+	.guarantee
+		&-wrap
+			flex-wrap: wrap
+			justify-content: center
+		&-block
+			flex-basis: 50%
+			margin-bottom: 50px
+			&:last-child
+				margin-bottom: 0
+			&__text
+				&_lg
+					display: inline
+
+@media only screen and (max-width : 768px)
+	.guarantee
+		padding: 60px 0 100px 0
+		&__title
+			width: 100%
+		&-block
+			flex-basis: 70%
+
+@media only screen and (max-width : 560px)
+	.guarantee
+		&__title
+			span
+				display: inline
+		&-block
+			&__text
+				&_sm
+					display: block
+
+// @media only screen and (max-width : 380px)

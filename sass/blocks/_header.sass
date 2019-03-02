@@ -1,0 +1,45 @@
+.header
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 10px 0
+	&-text
+		display: flex
+		align-items: center
+		&__contacts
+			margin-right: 30px
+			text-align: right
+		&__city
+			display: block
+			margin-bottom: 9px
+			font-size: 13px
+		&__phone
+			display: block
+			+phone
+
+@media only screen and (max-width : 560px)
+	.header
+		&-logo
+			flex-basis: 35%
+		&-text
+			&__contacts
+				margin-right: 15px
+			&__phone
+				font-size: 17px
+		&-button-xs
+			padding: 0
+			width: 40px
+			height: 40px
+			background: url(../img/header/header-mobile.png) no-repeat center
+			background-size: contain
+
+@media only screen and (max-width : 380px)
+	.header
+		&-logo
+			flex-basis: 32%
+		&-text
+			&__contacts
+				margin-right: 15px
+			&__phone
+				font-size: 14px

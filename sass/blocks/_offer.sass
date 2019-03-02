@@ -1,0 +1,53 @@
+.offer
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&-block
+		position: relative
+		flex-basis: 31.5%
+		min-height: 410px
+		background-color: $modal-bg-gray
+		&:last-child
+			margin-bottom: 0
+		&__text
+			padding: 25px 25px 0 25px
+			font-size: 16px
+			line-height: 23px
+			color: $text-color-black
+			span
+				+bold
+		&__img
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			img
+				object-fit: cover
+				vertical-align: bottom
+
+@media only screen and (max-width : 992px)
+	.offer
+		&-wrap
+			flex-wrap: wrap
+			justify-content: space-around
+		&-block
+			flex-basis: 45%
+			margin-bottom: 35px
+
+@media only screen and (max-width : 768px)
+	.offer
+		&-block
+			min-height: 360px
+			&__text
+				padding: 20px 20px 0px 20px
+
+@media only screen and (max-width : 560px)
+	.offer
+		&-block
+			flex-basis: 70%
+
+@media only screen and (max-width : 380px)
+	.offer
+		&-block
+			flex-basis: 100%

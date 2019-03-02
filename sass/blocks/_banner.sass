@@ -1,0 +1,27 @@
+.banner
+	background-color: $bg-color-yellow
+	&-text
+		text-align: center
+		font-size: 32px
+		line-height: 50px
+		color: $text-color-black
+		span
+			display: block
+
+@media only screen and (max-width : 992px)
+	.banner
+		&-text
+			font-size: 25px
+			line-height: 40px
+
+@media only screen and (max-width : 768px)
+	.banner
+		&-text
+			span
+				display: inline
+
+@media only screen and (max-width : 380px)
+	.banner
+		&-text
+			font-size: 21px
+			line-height: 35px
