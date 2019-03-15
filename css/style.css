@@ -366,6 +366,30 @@ template {
   font-style: normal;
 }
 
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 767px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -375,12 +399,6 @@ body {
   overflow-x: hidden;
   font-family: 'Museo Sans Light', sans-serif;
   color: #333333;
-}
-
-.container {
-  width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 button:active, button:focus, input:active, input:focus, .slick-active:active, .slick-active:focus {
@@ -438,18 +456,42 @@ img {
   border-radius: 10px;
   border: 1px solid #dddddd;
   font-size: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-@media only screen and (max-width: 1200px) {
-  .container {
-    width: 970px;
-  }
+.input:focus {
+  border-color: #ffc000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button-up {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+  display: none;
+  width: 60px;
+  height: 60px;
+  background-color: #ffc000;
+  font-size: 45px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.9;
+}
+
+.button-up:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 992px) {
-  .container {
-    width: 767px;
-  }
   .section-title {
     font-size: 25px;
     line-height: 38px;
@@ -460,9 +502,6 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
   .hidden-xs {
     display: none;
   }
@@ -2077,6 +2116,10 @@ img {
 
 .contacts-list__text_bold {
   font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.contacts-list__text_phone {
+  color: #000000;
 }
 
 @media only screen and (max-width: 1200px) {

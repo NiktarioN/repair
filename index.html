@@ -80,11 +80,10 @@
 					Оставьте заявку на разработку бесплатного дизайн-проекта!
 				</span>
 			</h2>
-			<form action="#" class="js-ajax">
+			<form action="#" id="feedback-form">
 				<div class="feedback-form__input-wrap">
-					<input type="text" name="fio" class="input feedback-form__input input__name" placeholder="Ваше имя" required>
-					<input type="tel" name="phone" maxlength="11" autocomplete="" class="input feedback-form__input input__tel"
-						placeholder="Ваш телефон" required>
+					<input type="text" name="username" class="input feedback-form__input input__name" placeholder="Ваше имя">
+					<input type="tel" name="phone" class="input feedback-form__input input__tel phone" placeholder="Ваш телефон">
 				</div>
 				<button type="submit" class="button feedback-form__button">
 					Получить бесплатный дизайн&nbsp;-&nbsp;проект
@@ -350,10 +349,9 @@
 				<span class="information-form__subtitle">
 					Для этого заполните форму ниже
 				</span>
-				<form action="#" class="js-ajax">
-					<input type="text" name="fio" class="input information-form__input input__name" placeholder="Ваше имя" required>
-					<input type="tel" name="phone" maxlength="11" autocomplete="" class="input information-form__input input__tel"
-						placeholder="Ваш телефон" required>
+				<form action="#">
+					<input type="text" name="username" class="input information-form__input input__name" placeholder="Ваше имя">
+					<input type="tel" name="phone" class="input information-form__input input__tel phone" placeholder="Ваш телефон">
 					<button type="submit" class="button information-form__button">
 						Рассчитать стоимость
 					</button>
@@ -402,7 +400,7 @@
 						</span>
 						<span class="contacts-list__text">
 							Телефон: <br>
-							<a class="contacts-list__text_bold" href="tel: +749542-25131">+7 (495) 42-251-31</a>
+							<a class="contacts-list__text_bold contacts-list__text_phone" href="tel: +749542-25131">+7 (495) 42-251-31</a>
 						</span>
 					</li>
 				</ul>
@@ -491,9 +489,8 @@
 				Заполните поля ниже - мы свяжемся с&nbsp;Вами
 			</div>
 			<form action="#">
-				<input type="text" class="input modal-form__input input__name" placeholder="Ваше имя" required>
-				<input type="tel" maxlength="11" autocomplete="" class="input modal-form__input input__tel"
-					placeholder="Ваш телефон" required>
+				<input type="text" name="username" class="input modal-form__input input__name" placeholder="Ваше имя">
+				<input type="tel" name="phone" class="input modal-form__input input__tel phone" placeholder="Ваш телефон">
 				<button type="submit" class="button modal-form__button">
 					Узнать стоимость
 				</button>
@@ -508,12 +505,18 @@
 	</div>
 </div>
 
+<!-- Интерфейс -->
+
+<div class="button-up" id="button-up">&#8593;</div>
+
+<!-- Подключение скриптов -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/slider.js"></script>
-<script src="js/form-ajax.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 
-<script src="js/modal.js"></script>
+<script src="js/main.js"></script>
+<script src="js/validate.js"></script>
 
 </body>
 
