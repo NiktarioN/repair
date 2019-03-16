@@ -466,6 +466,14 @@ img {
   transition: 0.3s;
 }
 
+.input.invalid {
+  border: 1px solid red;
+}
+
+.input.invalid:focus {
+  border: 1px solid red;
+}
+
 .button-up {
   position: fixed;
   right: 30px;
@@ -489,6 +497,10 @@ img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+}
+
+#username-error, #phone-error, #email-error {
+  margin-top: 5px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -817,8 +829,7 @@ img {
 }
 
 .feedback-form__input {
-  width: 47%;
-  margin-bottom: 30px;
+  width: 100%;
 }
 
 .feedback-form__input-wrap {
@@ -833,13 +844,22 @@ img {
           align-items: center;
 }
 
-.feedback-form__input:first-child {
-  margin-right: 20px;
+.feedback-form__input-wrap_name {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  text-align: center;
+}
+
+.feedback-form__input-wrap_phone {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  text-align: center;
 }
 
 .feedback-form__button {
   display: block;
   padding: 28px;
+  margin-top: 30px;
   margin-bottom: 25px;
   width: 100%;
   font-size: 16px;
@@ -918,17 +938,17 @@ img {
   .feedback-form__input {
     width: 100%;
   }
-  .feedback-form__input:first-child {
-    margin-right: 0;
-  }
   .feedback-form__input-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .feedback-form__input-wrap_phone {
+    margin-top: 20px;
   }
   .feedback-form__button {
     padding: 20px;
@@ -1658,10 +1678,11 @@ img {
 .information-form__input {
   display: block;
   width: 100%;
+  margin-top: 15px;
 }
 
 .information-form__input:first-child {
-  margin-bottom: 15px;
+  margin-top: 0;
 }
 
 .information-form__button {
@@ -1697,7 +1718,7 @@ img {
 @media only screen and (max-width: 768px) {
   .information::before {
     width: 100%;
-    height: 49%;
+    height: 44%;
   }
   .information-wrap {
     -webkit-box-orient: vertical;
@@ -1713,7 +1734,7 @@ img {
   }
   .information-form__input {
     width: 70%;
-    margin: 0 auto;
+    margin: 15px auto 0  auto;
   }
   .information-form__button {
     width: 70%;
@@ -1737,6 +1758,9 @@ img {
 }
 
 @media only screen and (max-width: 380px) {
+  .information::before {
+    height: 46%;
+  }
   .information-form__input {
     width: 100%;
   }
@@ -1779,10 +1803,16 @@ img {
   font-size: 25px;
   color: #000000;
   opacity: 0.52;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .modal__close:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .modal-info {
@@ -1909,8 +1939,8 @@ img {
   width: 100%;
 }
 
-.modal-form__input:first-child {
-  margin-bottom: 15px;
+.modal-form__input:last-of-type {
+  margin-top: 15px;
 }
 
 .modal-form__button {

@@ -82,8 +82,12 @@
 			</h2>
 			<form action="#" id="feedback-form">
 				<div class="feedback-form__input-wrap">
-					<input type="text" name="username" class="input feedback-form__input input__name" placeholder="Ваше имя">
-					<input type="tel" name="phone" class="input feedback-form__input input__tel phone" placeholder="Ваш телефон">
+						<div class="feedback-form__input-wrap_name">
+							<input type="text" name="username" class="input feedback-form__input" placeholder="Ваше имя">
+						</div>
+						<div class="feedback-form__input-wrap_phone">
+								<input type="tel" name="phone" class="input feedback-form__input phone" placeholder="Ваш телефон">
+						</div>
 				</div>
 				<button type="submit" class="button feedback-form__button">
 					Получить бесплатный дизайн&nbsp;-&nbsp;проект
@@ -349,9 +353,10 @@
 				<span class="information-form__subtitle">
 					Для этого заполните форму ниже
 				</span>
-				<form action="#">
-					<input type="text" name="username" class="input information-form__input input__name" placeholder="Ваше имя">
-					<input type="tel" name="phone" class="input information-form__input input__tel phone" placeholder="Ваш телефон">
+				<form action="#" id="information-form">
+					<input type="text" name="username" class="input information-form__input" placeholder="Ваше имя">
+					<input type="tel" name="phone" class="input information-form__input phone" placeholder="Ваш телефон">
+					<input type="email" name="email" class="input information-form__input" placeholder="Ваш email">
 					<button type="submit" class="button information-form__button">
 						Рассчитать стоимость
 					</button>
@@ -488,9 +493,9 @@
 			<div class="modal-form__subtitle">
 				Заполните поля ниже - мы свяжемся с&nbsp;Вами
 			</div>
-			<form action="#">
-				<input type="text" name="username" class="input modal-form__input input__name" placeholder="Ваше имя">
-				<input type="tel" name="phone" class="input modal-form__input input__tel phone" placeholder="Ваш телефон">
+			<form action="#" id="modal-form">
+				<input type="text" name="username" class="input modal-form__input" placeholder="Ваше имя">
+				<input type="tel" name="phone" class="input modal-form__input phone" placeholder="Ваш телефон">
 				<button type="submit" class="button modal-form__button">
 					Узнать стоимость
 				</button>
