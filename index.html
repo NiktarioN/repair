@@ -40,7 +40,7 @@
 			<div class="header-text">
 				<div class="header-text__contacts">
 					<span class="header-text__city">Калуга, Москва, МО</span>
-					<a class="header-text__phone" href="tel: +749542-25131">+7 (495) 42-251-31</a>
+					<a class="header-text__phone" href="tel:+749542-25131">+7 (495) 42-251-31</a>
 				</div>
 				<div class="header-text__button">
 					<button class="button header-button-xs" onclick="ym(52826110, 'reachGoal', 'button-header'); return true;" id="button-callback"><span class="hidden">Перезвоните <span class="hidden-xs">мне</span></span></button>
@@ -98,13 +98,13 @@
 					Оставьте заявку на разработку бесплатного дизайн-проекта!
 				</span>
 			</h2>
-			<form action="#" method="get" onsubmit="ym(52826110, 'reachGoal', 'feedback-form'); return true;" id="feedback-form">
+			<form action="#" method="POST" onsubmit="ym(52826110, 'reachGoal', 'feedback-form'); return true;" id="feedback-form">
 				<div class="feedback-form__input-wrap">
 						<div class="feedback-form__input-wrap_name">
-							<input type="text" name="username" class="input feedback-form__input" placeholder="Ваше имя">
+							<input type="text" name="user_name" class="input feedback-form__input" placeholder="Ваше имя">
 						</div>
 						<div class="feedback-form__input-wrap_phone">
-								<input type="tel" name="phone" class="input feedback-form__input phone" placeholder="Ваш телефон">
+								<input type="tel" name="user_phone" class="input feedback-form__input phone" placeholder="Ваш телефон">
 						</div>
 				</div>
 				<button type="submit" class="button feedback-form__button">
@@ -118,7 +118,7 @@
 				<div class="feedback-info__callback">
 					<div class="feedback-info__text">
 						или перезвоните нам сами
-						<a href="tel: +74954225131" class="feedback-info__phone">
+						<a href="tel:+74954225131" class="feedback-info__phone">
 							+7 (495) 42-251-31
 						</a>
 					</div>
@@ -126,6 +126,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="success-form"></div>
 </section>
 
 <section class="section portfolio">
@@ -339,7 +340,6 @@
 	</div>
 </section>
 
-
 <section class="section information">
 	<div class="container">
 		<div class="information-wrap">
@@ -372,9 +372,9 @@
 					Для этого заполните форму ниже
 				</span>
 				<form action="#" id="information-form">
-					<input type="text" name="username" class="input information-form__input" placeholder="Ваше имя">
-					<input type="tel" name="phone" class="input information-form__input phone" placeholder="Ваш телефон">
-					<input type="email" name="email" class="input information-form__input" placeholder="Ваш email">
+					<input type="text" name="user_name" class="input information-form__input" placeholder="Ваше имя">
+					<input type="tel" name="user_phone" class="input information-form__input phone" placeholder="Ваш телефон">
+					<input type="email" name="user_email" class="input information-form__input" placeholder="Ваш email">
 					<button type="submit" class="button information-form__button">
 						Рассчитать стоимость
 					</button>
@@ -423,7 +423,7 @@
 						</span>
 						<span class="contacts-list__text">
 							Телефон: <br>
-							<a class="contacts-list__text_bold contacts-list__text_phone" href="tel: +749542-25131">+7 (495) 42-251-31</a>
+							<a class="contacts-list__text_bold contacts-list__text_phone" href="tel:+749542-25131">+7 (495) 42-251-31</a>
 						</span>
 					</li>
 				</ul>
@@ -512,15 +512,15 @@
 				Заполните поля ниже - мы свяжемся с&nbsp;Вами
 			</div>
 			<form action="#" id="modal-form">
-				<input type="text" name="username" class="input modal-form__input" placeholder="Ваше имя">
-				<input type="tel" name="phone" class="input modal-form__input phone" placeholder="Ваш телефон">
+				<input type="text" name="user_name" class="input modal-form__input" placeholder="Ваше имя">
+				<input type="tel" name="user_phone" class="input modal-form__input phone" placeholder="Ваш телефон">
 				<button type="submit" class="button modal-form__button">
 					Узнать стоимость
 				</button>
 			</form>
 			<div class="modal-form__callback">
 				Или Вы можете перезвонить нам сами по&nbsp;телефону:
-				<a href="tel: +78182425131" class="modal-form__phone">
+				<a href="tel:+78182425131" class="modal-form__phone">
 					+7 (8182) 42-51-31
 				</a>
 			</div>
@@ -529,11 +529,10 @@
 </div>
 
 <!-- Интерфейс -->
-
 <div class="button-up" id="button-up">&#8593;</div>
 
 <!-- Подключение скриптов -->
-<script src="js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>

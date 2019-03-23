@@ -1,14 +1,26 @@
 // Библиотека WOW
 
-new WOW().init()
+wow = new WOW({
+	mobile: false,
+});
+wow.init();
 
 // Модальное окно
 
-document.querySelector('#button-callback').addEventListener('click', function () {
-	document.querySelector('#modal-callback').classList.add('modal_visible');
-});
-document.querySelector('.modal__close').addEventListener('click', function () {
-	document.querySelector('#modal-callback').classList.remove('modal_visible');
+$(document).ready(function() {
+	var button = $('#button-callback');
+	var modal = $('#modal-callback');
+	var close = $('.modal__close');
+
+	button.on('click', function(){
+		modal.addClass('modal_visible');
+		modal.fadeIn();
+	});
+
+	close.on('click', function(){
+		modal.removeClass('modal_visible');
+		modal.fadeOut();
+	});
 });
 
 // Слайдер
