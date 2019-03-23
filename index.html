@@ -40,7 +40,7 @@
 			<div class="header-text">
 				<div class="header-text__contacts">
 					<span class="header-text__city">Калуга, Москва, МО</span>
-					<a class="header-text__phone" href="tel:+749542-25131">+7 (495) 42-251-31</a>
+					<a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
 				</div>
 				<div class="header-text__button">
 					<button class="button header-button-xs" onclick="ym(52826110, 'reachGoal', 'button-header'); return true;" id="button-callback"><span class="hidden">Перезвоните <span class="hidden-xs">мне</span></span></button>
@@ -98,16 +98,16 @@
 					Оставьте заявку на разработку бесплатного дизайн-проекта!
 				</span>
 			</h2>
-			<form action="#" method="POST" onsubmit="ym(52826110, 'reachGoal', 'feedback-form'); return true;" id="feedback-form">
+			<form action="#" method="GET" onsubmit="ym(52826110, 'reachGoal', 'feedback-form'); return true;" id="feedback-form">
 				<div class="feedback-form__input-wrap">
 						<div class="feedback-form__input-wrap_name">
-							<input type="text" name="user_name" class="input feedback-form__input" placeholder="Ваше имя">
+							<input type="text" name="userName" class="input feedback-form__input" placeholder="Ваше имя">
 						</div>
 						<div class="feedback-form__input-wrap_phone">
-								<input type="tel" name="user_phone" class="input feedback-form__input phone" placeholder="Ваш телефон">
+								<input type="tel" name="userPhone" class="input feedback-form__input phone" placeholder="Ваш телефон">
 						</div>
 				</div>
-				<button type="submit" class="button feedback-form__button">
+				<button class="button feedback-form__button">
 					Получить бесплатный дизайн&nbsp;-&nbsp;проект
 				</button>
 			</form>
@@ -126,7 +126,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="success-form"></div>
 </section>
 
 <section class="section portfolio">
@@ -372,10 +371,10 @@
 					Для этого заполните форму ниже
 				</span>
 				<form action="#" id="information-form">
-					<input type="text" name="user_name" class="input information-form__input" placeholder="Ваше имя">
-					<input type="tel" name="user_phone" class="input information-form__input phone" placeholder="Ваш телефон">
-					<input type="email" name="user_email" class="input information-form__input" placeholder="Ваш email">
-					<button type="submit" class="button information-form__button">
+					<input type="text" name="userName" class="input information-form__input" placeholder="Ваше имя">
+					<input type="tel" name="userPhone" class="input information-form__input phone" placeholder="Ваш телефон">
+					<input type="email" name="userEmail" class="input information-form__input" placeholder="Ваш email">
+					<button class="button information-form__button">
 						Рассчитать стоимость
 					</button>
 				</form>
@@ -423,7 +422,7 @@
 						</span>
 						<span class="contacts-list__text">
 							Телефон: <br>
-							<a class="contacts-list__text_bold contacts-list__text_phone" href="tel:+749542-25131">+7 (495) 42-251-31</a>
+							<a class="contacts-list__text_bold contacts-list__text_phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
 						</span>
 					</li>
 				</ul>
@@ -512,9 +511,9 @@
 				Заполните поля ниже - мы свяжемся с&nbsp;Вами
 			</div>
 			<form action="#" id="modal-form">
-				<input type="text" name="user_name" class="input modal-form__input" placeholder="Ваше имя">
-				<input type="tel" name="user_phone" class="input modal-form__input phone" placeholder="Ваш телефон">
-				<button type="submit" class="button modal-form__button">
+				<input type="text" name="userName" class="input modal-form__input" placeholder="Ваше имя">
+				<input type="tel" name="userPhone" class="input modal-form__input phone" placeholder="Ваш телефон">
+				<button class="button modal-form__button">
 					Узнать стоимость
 				</button>
 			</form>

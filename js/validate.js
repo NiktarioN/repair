@@ -2,29 +2,29 @@ $('#information-form').validate({
 	errorClass: "invalid",
 	errorElement: "div",
 	rules: {
-		user_name: {
+		userName: {
 			required: true,
 			minlength: 2,
 			maxlength: 15
 		},
-		user_phone: {
+		userPhone: {
 			required: true
 		},
-		user_email: {
+		userEmail: {
 			required: true,
 			email: true
 		}
 	},
 	messages: {
-		user_name: {
+		userName: {
 			required: "Введите ваше имя",
 			minlength: jQuery.validator.format("Минимум символов в имени: {0}"),
 			maxlength: jQuery.validator.format("Максимум символов в имени: {0}")
 		},
-		user_phone: {
+		userPhone: {
 			required: "Введите ваш номер телефона"
 		},
-		user_email: {
+		userEmail: {
 			required: "Укажите ваш email",
 			email: "Введите корректный email"
 		}
@@ -35,29 +35,29 @@ $('#feedback-form').validate({
 	errorClass: "invalid",
 	errorElement: "div",
 	rules: {
-		user_name: {
+		userName: {
 			required: true,
 			minlength: 2,
 			maxlength: 15
 		},
-		user_phone: {
+		userPhone: {
 			required: true
 		},
-		user_email: {
+		userEmail: {
 			required: true,
 			email: true
 		}
 	},
 	messages: {
-		user_name: {
+		userName: {
 			required: "Введите ваше имя",
 			minlength: jQuery.validator.format("Минимум символов в имени: {0}"),
 			maxlength: jQuery.validator.format("Максимум символов в имени: {0}")
 		},
-		user_phone: {
+		userPhone: {
 			required: "Введите ваш номер телефона"
 		},
-		user_email: {
+		userEmail: {
 			required: "Укажите ваш email",
 			email: "Введите корректный email"
 		}
@@ -83,22 +83,22 @@ $('#modal-form').validate({
 	errorClass: "invalid",
 	errorElement: "div",
 	rules: {
-		user_name: {
+		userName: {
 			required: true,
 			minlength: 2,
 			maxlength: 15
 		},
-		user_phone: {
+		userPhone: {
 			required: true
 		}
 	},
 	messages: {
-		user_name: {
+		userName: {
 			required: "Введите ваше имя",
 			minlength: jQuery.validator.format("Минимум символов в имени: {0}"),
 			maxlength: jQuery.validator.format("Максимум символов в имени: {0}")
 		},
-		user_phone: {
+		userPhone: {
 			required: "Введите ваш номер телефона"
 		}
 	}

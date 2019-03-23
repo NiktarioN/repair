@@ -1,6 +1,6 @@
 // Библиотека WOW
 
-wow = new WOW({
+const wow = new WOW({
 	mobile: false,
 });
 wow.init();
@@ -8,9 +8,9 @@ wow.init();
 // Модальное окно
 
 $(document).ready(function() {
-	var button = $('#button-callback');
-	var modal = $('#modal-callback');
-	var close = $('.modal__close');
+	const button = $('#button-callback');
+	const modal = $('#modal-callback');
+	const close = $('.modal__close');
 
 	button.on('click', function(){
 		modal.addClass('modal_visible');
