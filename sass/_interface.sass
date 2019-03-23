@@ -30,7 +30,7 @@ img
 		text-align: center
 
 .button
-	padding: 17px 30px
+	padding: 28px
 	transition: 0.3s
 	font-size: 13px
 	+bold
@@ -65,15 +65,19 @@ img
 	width: 60px
 	height: 60px
 	background-color: $bg-color-yellow
-	font-size: 45px
 	border-radius: 50%
 	text-align: center
-	transition: 0.3s
 	opacity: 0.9
 	&:hover
 		transform: scale(1.15)
 		transition: 0.3s
 		cursor: pointer
+	&__img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 55%
 
 #userName-error,#userPhone-error,#userEmail-error
 	margin-top: 5px
@@ -90,15 +94,20 @@ img
 	.hidden-xs
 		display: none
 	.section
-		padding: 70px 0
+		padding: 60px 0
 		&-title
 			margin-bottom: 40px
+	.button-up
+		bottom: 15px
+		right: 15px
+		width: 50px
+		height: 50px
 
 @media only screen and (max-width : 560px)
 	.hidden
 		display: none
 	.button
-			padding: 20px
+			padding: 23px
 
 @media only screen and (max-width : 380px)
 	.section

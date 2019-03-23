@@ -63,19 +63,17 @@ $('#feedback-form').validate({
 		}
 	},
 	submitHandler: function () {
-		$('#feedback-form').on('submit', function (event) {
-			event.preventDefault();
-			$.ajax({
-				url: 'php/mail.php',
-				type: 'POST',
-				data: $(this).serialize(),
-				success: function (data) {
-					console.log(data);
-					// alert(data + ', Ваша форма отправлена! Мы скоро перезвоним!');
-					// $("#feedback-form").trigger('reset');
-				}
-			});
+		$.ajax({
+			url: 'php/mail.php',
+			type: 'POST',
+			data: $(this).serialize(),
+			success: function (data) {
+				console.log(data);
+				alert(data + ', Ваша форма отправлена! Мы скоро перезвоним!');
+				$("#feedback-form").trigger('reset');
+			}
 		});
+		return false;
 	}
 });
 

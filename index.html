@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ремонт квартир</title>
-	<link rel="stylesheet" href="css/animate.css">
+	<meta name="description" content="Ремонт квартир по самым выгодным ценам и по вашим желаниям">
+	<meta name="keywords" content="ремонт квартир, ремонт, квартиры, план, html, css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -35,7 +36,7 @@
 	<div class="container">
 		<div class="header-wrap wow fadeInDown">
 			<div class="header-logo">
-				<img src="img/header/header-logo.jpg" alt="Ремонт квартир">
+				<img src="img/header/header-logo.svg" alt="Ремонт квартир">
 			</div>
 			<div class="header-text">
 				<div class="header-text__contacts">
@@ -43,7 +44,7 @@
 					<a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
 				</div>
 				<div class="header-text__button">
-					<button class="button header-button-xs" onclick="ym(52826110, 'reachGoal', 'button-header'); return true;" id="button-callback"><span class="hidden">Перезвоните <span class="hidden-xs">мне</span></span></button>
+					<button class="button header__button header-button-xs" onclick="ym(52826110, 'reachGoal', 'button-header'); return true;" id="button-callback"><span class="hidden">Перезвоните <span class="hidden-xs">мне</span></span></button>
 				</div>
 			</div>
 		</div>
@@ -170,7 +171,7 @@
 				<div class="price-card__img-wrap">
 					<img src="img/price/price-img_1.jpg" alt="Фотография услуги" class="price-card__img">
 				</div>
-				<div class="price-card__title">Ремонт ванных комнат и с/у
+				<div class="price-card__title">Ремонт ванных комнат и с&nbsp;/&nbsp;у
 				</div>
 				<a href="#" class="price-card__link">Узнать цены</a>
 			</div>
@@ -317,20 +318,20 @@
 		<h2 class="section-title section-title_center guarantee__title">Все наши гарантийные обязательства <span>подробно и прозрачно описаны в договоре</span></h2>
 		<div class="guarantee-wrap">
 			<div class="guarantee-block wow fadeInLeft" data-wow-delay="0.2s" data-wow-offset="250">
-				<div class="guarantee-block__img"><img src="img/guarantee/guarantee-img_1.jpg" alt="Гарантия"></div>
+				<div class="guarantee-block__img"><img src="img/guarantee/guarantee-img_1_sm.jpg" data-large="img/guarantee/guarantee-img_1_big.jpg" alt="Гарантия"></div>
 				<div class="guarantee-block__text">
 					Гарантия на качество <span class="guarantee-block__text_xl">выполняемых работ</span>
 				</div>
 			</div>
 			<div class="guarantee-block wow fadeInLeft" data-wow-delay="0.4s" data-wow-offset="250">
-				<div class="guarantee-block__img"><img src="img/guarantee/guarantee-img_2.jpg" alt="Гарантия"></div>
+				<div class="guarantee-block__img"><img src="img/guarantee/guarantee-img_2_sm.jpg" data-large="img/guarantee/guarantee-img_2_big.jpg" alt="Гарантия" class="gg"></div>
 				<div class="guarantee-block__text">
 					Гарантия на <span class="guarantee-block__text_lg guarantee-block__text_sm">фиксированные цены</span><span
 						class="guarantee-block__text_xl">Виды работ и цены на них прописаны в&nbsp;договоре</span>
 				</div>
 			</div>
 			<div class="guarantee-block wow fadeInLeft" data-wow-delay="0.6s" data-wow-offset="250">
-				<div class="guarantee-block__img"><img src="img/guarantee/guarantee-img_3.jpg" alt="Гарантия"></div>
+				<div class="guarantee-block__img"><img src="img/guarantee/guarantee-img_3_sm.jpg" data-large="img/guarantee/guarantee-img_3_big.jpg" alt="Гарантия"></div>
 				<div class="guarantee-block__text">
 					Гарантия на точное соблюдение сроков и ответственность за их&nbsp;невыполнение
 				</div>
@@ -409,7 +410,7 @@
 					</li>
 					<li class="contacts-list__item">
 						<span class="contacts-list__icon">
-							<img src="img/footer/footer-icon_2.png" alt="Иконка">
+							<img src="img/footer/footer-icon_2.svg" alt="Иконка">
 						</span>
 						<span class="contacts-list__text">
 							Режим работы: <br>
@@ -418,7 +419,7 @@
 					</li>
 					<li class="contacts-list__item">
 						<span class="contacts-list__icon">
-							<img src="img/footer/footer-icon_3.png" alt="Иконка">
+							<img src="img/footer/footer-icon_3.svg" alt="Иконка">
 						</span>
 						<span class="contacts-list__text">
 							Телефон: <br>
@@ -528,7 +529,9 @@
 </div>
 
 <!-- Интерфейс -->
-<div class="button-up" id="button-up">&#8593;</div>
+<div class="button-up" id="button-up">
+	<img src="img/interface/arrow-up.svg" alt="Наверх" class="button-up__img">
+</div>
 
 <!-- Подключение скриптов -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -536,6 +539,7 @@
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/zoomsl-3.0.min.js"></script>
 
 <script src="js/main.js"></script>
 <script src="js/validate.js"></script>
