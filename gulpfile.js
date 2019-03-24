@@ -38,7 +38,7 @@ gulp.task('tinyPNG', function (done) {
 		.pipe(tinyPNG({
 			key: 'n7CtLNPs4zrMThpg2SLT4RDl27sMNRdf',
 		}))
-		.pipe(gulp.dest('dist/img/'));
+		.pipe(gulp.dest('dist/img/'))
 		done();
 });
 
