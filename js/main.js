@@ -58,11 +58,21 @@ $(document).ready(function () {
 		]
 	});
 
-	// Зум для документов
-	jQuery(function () {
-		$(".gg").imagezoomsl({
-			zoomrange: [3, 3]
-		});
+	// Magnific Popup
+	$('.guarantee-block__img_mgp').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeOnBgClick: false,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', 
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 400
+		}
 	});
 
 	// Кнопка "Наверх"
