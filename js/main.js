@@ -18,6 +18,11 @@ $(document).ready(function () {
 		modal.fadeIn();
 	});
 
+	$('.price-card__link').click(function (e) {
+		e.preventDefault();
+		modal.addClass('modal_visible');
+	}); 
+
 	close.on('click', function () {
 		modal.removeClass('modal_visible');
 		modal.fadeOut();
