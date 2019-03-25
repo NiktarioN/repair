@@ -19,10 +19,13 @@
   "homepage": "https://github.com/NiktarioN/repair#readme",
   "devDependencies": {
     "gulp": "^4.0.0",
-    "gulp-clean-css": "^4.0.0"
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0"
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
+    "gulp-minify-inline-js": "^1.0.0",
     "gulp-tinypng-compress": "^1.2.1"
   }
 }

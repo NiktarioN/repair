@@ -25,10 +25,9 @@ $mail->isHTML(true);
 
 $mail->Subject = "Новая заявка с сайта";
 $mail->Body    = '
-	Пользователь оставил свои данные <br> 
-	Имя: ' . $userName . ' <br>
-	Телефон: ' . $userPhone . ' <br>
-	Email: '. $userEmail . '';
+Пользователь оставил свои данные <br> 
+Имя: ' . $userName . ' <br>
+Телефон: ' . $userPhone . '';
 $mail->AltBody = 'Это альтернативный текст';
 
 // Результат

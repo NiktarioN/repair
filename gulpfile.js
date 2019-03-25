@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
 var cleanCSS = require('gulp-clean-css');
+var jsmin= require('gulp-minify-inline-js');
+var jsone = require('gulp-concat');
 var tinyPNG = require('gulp-tinypng-compress');
 
 gulp.task('htmlmin', function(done) {
@@ -21,8 +23,16 @@ gulp.task('minify-css', function(done) {
 	done();
 });
 
-gulp.task('move-js', function(done) {
+gulp.task('minify-js', function(done) {
 	return gulp.src('js/*.js')
+	.pipe(jsmin({}))
+	.pipe(gulp.dest('dist/js/'))
+	done();
+});
+
+gulp.task('jsone', function(done) {
+	return gulp.src('js/*.js')
+	.pipe(jsone('all.js'))
 	.pipe(gulp.dest('dist/js/'))
 	done();
 });
@@ -42,6 +52,6 @@ gulp.task('tinyPNG', function (done) {
 		done();
 });
 
-gulp.task('default', gulp.series('htmlmin', 'minify-css', 'move-js', 'fonts', 'tinyPNG',  function(done) {
+gulp.task('default', gulp.series('htmlmin', 'minify-css', 'minify-js', 'fonts', 'tinyPNG',  function(done) {
 	done();
   }));
